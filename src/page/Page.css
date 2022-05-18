@@ -1,0 +1,53 @@
+.items{
+    justify-content: center;
+    margin: 1rem;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    min-width: auto;
+    box-sizing: border-box;
+    padding-top: 1.2rem;
+}
+.img{
+    height: 150px;
+    width: 150px;
+}
+.data{
+
+}
+.category{
+    font-weight: 100;
+    line-height:0.10;
+    font-size: 4px;
+}
+.title{
+
+}
+.title.card-title {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    width: 180px !important;
+}
+.item-button span{
+    color: black;
+
+}
+.item-button{
+    background-color: rgb(192 192 8 / 85%) !important;
+    border-color:rgb(192 192 8 / 85%) !important;
+}
+.item-button a{
+    text-decoration: none !important;
+}
+
+.DeleteItem{
+    color:red;
+}
+
+.ProductWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}

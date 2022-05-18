@@ -1,0 +1,24 @@
+
+.FormWrap{
+    height: auto;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10% auto 10% 35%;
+}
+
+.labelControl{
+    display: block;
+}
+.inputControl{
+    margin-bottom: 2%;
+
+}
+.ButtonControl{
+    display: block;
+    margin:4% 2% 1% 43%;
+
+
+
+}

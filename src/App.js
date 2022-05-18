@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./component/Header";
+import HomePage from "./page/HomePage";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import OrderPage from './page/OrderPage';
+import LoginProvider from "./contextApi";
+import {Login} from './auth/Login';
+import {Register} from './auth/Register';
+import React from "react";
+import {useSelector} from "react-redux";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const loggedInStatus = useSelector((state) => state.userReducer.loggedIn)
+    let HideHeader = !loggedInStatus ? null : <Header />
+    return (
+        <div className="App">
+            <BrowserRouter>
+                {HideHeader}
+                    <Routes>
+                        <Route path="HomePage" exact element={<HomePage/>}/>
+                        <Route path="OrderPage" element={<OrderPage/>}/>
+                        <Route path="/" element={<Login/>}/>
+                        <Route path="/Register" element={<Register/>}/>
+                    </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

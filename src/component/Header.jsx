@@ -26,14 +26,13 @@ const Header=()=> {
         const data=e.target.value;
         console.log(data)
         setSearch(data)
-        // dispatch(setProduct(searchItem))
     }
     return (
         <>
             <div>
                 <Navbar collapseOnSelect expand="lg" bg="orange" variant="light" className="Header">
                     <Container>
-                        <Navbar.Brand href="/HomePage">app</Navbar.Brand>
+                        <Navbar.Brand href="/">app</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
@@ -42,9 +41,9 @@ const Header=()=> {
                                     {productQuantity}</Nav.Link>
 
                             </Nav>
-                            <Nav>
+                            {/* <Nav>
                                 <Nav.Link href="#" onClick={logout}>LogOut</Nav.Link>
-                            </Nav>
+                            </Nav> */}
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

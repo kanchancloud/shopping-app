@@ -18,11 +18,11 @@ const HomePage = () => {
     const loggedInStatus = useSelector((state) => state.userReducer.loggedIn)
     const history = useNavigate()
 
-    useEffect(() => {
-        if(!loggedInStatus) {
-            history("/")
-        }
-    })
+    // useEffect(() => {
+    //     if(!loggedInStatus) {
+    //         history("/")
+    //     }
+    // })
 
     useEffect(() => {
         axios.get(baseUrl).then((response) => {

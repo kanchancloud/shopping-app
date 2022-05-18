@@ -21,6 +21,7 @@ export const Register=() =>{
             history('/')
 
         }catch(error){
+            alert(error.message)
             console.log(error.message);
         }
     }

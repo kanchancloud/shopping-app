@@ -19,11 +19,11 @@ const OrderPage = () => {
         ListCart.push(items.Carts[item])
     })
 
-    useEffect(() => {
-        if(!loggedInStatus) {
-            history("/")
-        }
-    })
+    // useEffect(() => {
+    //     if(!loggedInStatus) {
+    //         history("/")
+    //     }
+    // })
 
     function  TotalPrice(price,cart){
 

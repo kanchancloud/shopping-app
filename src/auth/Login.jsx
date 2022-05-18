@@ -34,7 +34,7 @@ export const Login=() =>{
             console.log(user)
         } catch (error) {
             console.log(error.message)
-            alert("please enter current email and password")
+            alert(error.message)
         }
         // [history]
     };
